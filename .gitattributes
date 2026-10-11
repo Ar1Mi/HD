@@ -1,0 +1,7 @@
+# keep Windows line endings and cp1250 bytes exactly as SSIS expects
+*.txt -text
+*.dtsx -text
+*.dtproj -text
+*.sln -text
+*.database -text
+*.params -text
