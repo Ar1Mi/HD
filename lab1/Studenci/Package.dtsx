@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="10/9/2026 5:30:00 PM"
+  DTS:CreationDate="10/17/2026 6:00:00 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ARTURGUBANO1979"
   DTS:CreatorName="ARTURGUBANO1979\artur"
@@ -11,42 +11,31 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{5A7CF910-0BBF-4B13-9F13-FCEDC2989B6F}">
+  DTS:VersionGUID="{678C8037-DED2-40AC-A01D-9FD3986545F7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager DTS:refId="Package.ConnectionManagers[Źródło Studentów]" DTS:CreationName="FLATFILE" DTS:DTSID="{2B437D1C-DD7A-4761-9696-A2750BB57251}" DTS:ObjectName="Źródło Studentów">
+    <DTS:ConnectionManager DTS:refId="Package.ConnectionManagers[Źródło Studentów]" DTS:CreationName="FLATFILE" DTS:DTSID="{37B30614-F74E-49EB-A58B-3A088A008546}" DTS:ObjectName="Źródło Studentów">
       <DTS:ObjectData>
-        <DTS:ConnectionManager DTS:Format="Delimited" DTS:LocaleID="1045" DTS:HeaderRowDelimiter="_x000D__x000A_" DTS:ColumnNamesInFirstDataRow="True" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_" DTS:CodePage="1250" DTS:ConnectionString="C:\HD\lab1\StudenciSource.txt">
+        <DTS:ConnectionManager DTS:Format="Delimited" DTS:LocaleID="1045" DTS:HeaderRowDelimiter="_x000D__x000A_" DTS:HeaderRowsToSkip="1" DTS:ColumnNamesInFirstDataRow="True" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_" DTS:CodePage="1250" DTS:ConnectionString="C:\HD\lab1\StudenciSource.txt">
           <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x000D__x000A_" DTS:MaximumWidth="100" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="Student Nr.Albumu" DTS:DTSID="{7C5555C9-438F-47FD-BDC0-F24C7FCF4BF5}" DTS:CreationName="" />
+            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x000D__x000A_" DTS:MaximumWidth="250" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="Student" DTS:DTSID="{B9BA98D1-F449-4A33-AD24-AB35281989FD}" DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager DTS:refId="Package.ConnectionManagers[Eksportuj Studentów]" DTS:CreationName="FLATFILE" DTS:DTSID="{C8E0FDFA-D527-47EF-9DE8-3C5BB5A15D34}" DTS:ObjectName="Eksportuj Studentów">
+    <DTS:ConnectionManager DTS:refId="Package.ConnectionManagers[Eksportuj Studentów]" DTS:CreationName="FLATFILE" DTS:DTSID="{6EC40015-1150-4F05-B7E0-28B1D9043C1A}" DTS:ObjectName="Eksportuj Studentów">
       <DTS:ObjectData>
-        <DTS:ConnectionManager DTS:Format="Delimited" DTS:LocaleID="1045" DTS:HeaderRowDelimiter="_x000D__x000A_" DTS:ColumnNamesInFirstDataRow="True" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_" DTS:CodePage="1250" DTS:ConnectionString="C:\HD\lab1\StudenciWynik.txt">
+        <DTS:ConnectionManager DTS:Format="Delimited" DTS:LocaleID="1045" DTS:HeaderRowDelimiter="_x000D__x000A_" DTS:HeaderRowsToSkip="0" DTS:ColumnNamesInFirstDataRow="True" DTS:RowDelimiter="" DTS:TextQualifier="_x003C_none_x003E_" DTS:CodePage="1250" DTS:ConnectionString="C:\HD\lab1\StudenciDestination.txt">
           <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x003B_" DTS:MaximumWidth="50" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="Imie" DTS:DTSID="{8EDFFD4F-B59A-4D4C-9EA3-9806E591649F}" DTS:CreationName="" />
-            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x003B_" DTS:MaximumWidth="50" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="Nazwisko" DTS:DTSID="{D1DA4B20-373E-4F45-930C-90D0C78CC214}" DTS:CreationName="" />
-            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x000D__x000A_" DTS:MaximumWidth="10" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="NrAlbumu" DTS:DTSID="{522D7CCF-27EC-40DB-95F0-B6A48D0F3376}" DTS:CreationName="" />
+            <DTS:FlatFileColumn DTS:ColumnType="Delimited" DTS:ColumnDelimiter="_x000D__x000A_" DTS:MaximumWidth="250" DTS:DataType="129" DTS:TextQualified="True" DTS:ObjectName="Student" DTS:DTSID="{65780E72-E1E2-4E20-8170-15D45811962D}" DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
   <DTS:Executables>
-    <DTS:Executable
-      DTS:refId="Package\Importuj Studentów"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{F289207B-88B4-4A05-81A9-8F0128772660}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Importuj Studentów"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+    <DTS:Executable DTS:refId="Package\Importuj Studentów" DTS:CreationName="Microsoft.Pipeline" DTS:Description="Data Flow Task" DTS:DTSID="{10BB3121-5770-4E70-82A5-EAB834D231EE}" DTS:ExecutableType="Microsoft.Pipeline" DTS:LocaleID="-1" DTS:ObjectName="Importuj Studentów" DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline version="1">
@@ -62,7 +51,7 @@
               <outputs>
                 <output refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output]" name="Flat File Source Output">
                   <outputColumns>
-                    <outputColumn refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]" codePage="1250" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student Nr.Albumu]" length="100" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]" name="Student Nr.Albumu" truncationRowDisposition="FailComponent">
+                    <outputColumn refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]" codePage="1250" dataType="str" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" externalMetadataColumnId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student]" length="250" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]" name="Student" truncationRowDisposition="FailComponent">
                       <properties>
                         <property dataType="System.Boolean" description="Indicates whether the column uses the faster, locale-neutral parsing routines." name="FastParse">false</property>
                         <property dataType="System.Boolean" description="Indicates whether the data is in binary format." name="UseBinaryFormat">false</property>
@@ -70,7 +59,7 @@
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns isUsed="True">
-                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student Nr.Albumu]" codePage="1250" dataType="str" length="100" name="Student Nr.Albumu" />
+                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Student]" codePage="1250" dataType="str" length="250" name="Student" />
                   </externalMetadataColumns>
                 </output>
                 <output refId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Error Output]" isErrorOut="true" name="Flat File Source Error Output">
@@ -87,21 +76,21 @@
               <inputs>
                 <input refId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]" description="Input to the Conditional Split Transformation" name="Conditional Split Input">
                   <inputColumns>
-                    <inputColumn refId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input].Columns[Student Nr.Albumu]" cachedCodepage="1250" cachedDataType="str" cachedLength="100" cachedName="Student Nr.Albumu" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]" />
+                    <inputColumn refId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input].Columns[Student]" cachedCodepage="1250" cachedDataType="str" cachedLength="250" cachedName="Student" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
-                <output refId="Package\Importuj Studentów\Conditional Split.Outputs[Poprawne Wiersze]" description="Output 1 of the Conditional Split Transformation" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" exclusionGroup="1" name="Poprawne Wiersze" synchronousInputId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]" truncationRowDisposition="FailComponent">
+                <output refId="Package\Importuj Studentów\Conditional Split.Outputs[Wiersze Poprawne]" description="Output 1 of the Conditional Split Transformation" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" exclusionGroup="1" name="Wiersze Poprawne" synchronousInputId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]" truncationRowDisposition="FailComponent">
                   <properties>
-                    <property containsID="true" dataType="System.String" description="Specifies the expression. This expression version uses lineage identifiers instead of column names." name="Expression">FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"brak",1) == 0 &amp;&amp; FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1) &gt; 1 &amp;&amp; FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},")",1) &gt; FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1)</property>
-                    <property containsID="true" dataType="System.String" description="Specifies the friendly version of the expression. This expression version uses column names." expressionType="Notify" name="FriendlyExpression">FINDSTRING([Student Nr.Albumu],"brak",1) == 0 &amp;&amp; FINDSTRING([Student Nr.Albumu],"(",1) &gt; 1 &amp;&amp; FINDSTRING([Student Nr.Albumu],")",1) &gt; FINDSTRING([Student Nr.Albumu],"(",1)</property>
+                    <property containsID="true" dataType="System.String" description="Specifies the expression. This expression version uses lineage identifiers instead of column names." name="Expression">SUBSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]},1,1) != &quot; &quot;</property>
+                    <property containsID="true" dataType="System.String" description="Specifies the friendly version of the expression. This expression version uses column names." expressionType="Notify" name="FriendlyExpression">SUBSTRING([Student],1,1) != &quot; &quot;</property>
                     <property dataType="System.Int32" description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value." name="EvaluationOrder">0</property>
                   </properties>
                   <externalMetadataColumns />
                 </output>
-                <output refId="Package\Importuj Studentów\Conditional Split.Outputs[Conditional Split Default Output]" description="Default Output of the Conditional Split Transformation" exclusionGroup="1" name="Niepoprawne Wiersze" synchronousInputId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]">
+                <output refId="Package\Importuj Studentów\Conditional Split.Outputs[Conditional Split Default Output]" description="Default Output of the Conditional Split Transformation" exclusionGroup="1" name="Wiersze Odrzucone" synchronousInputId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]">
                   <properties>
                     <property dataType="System.Boolean" name="IsDefaultOut">true</property>
                   </properties>
@@ -116,11 +105,16 @@
                 </output>
               </outputs>
             </component>
-            <component refId="Package\Importuj Studentów\Derived Column" componentClassID="Microsoft.DerivedColumn" contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0" description="Creates new column values by applying expressions to transformation input columns." name="Derived Column" usesDispositions="true">
+            <component refId="Package\Importuj Studentów\Derived Column" componentClassID="Microsoft.DerivedColumn" contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0" description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column." name="Derived Column" usesDispositions="true">
               <inputs>
                 <input refId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input]" description="Input to the Derived Column Transformation" name="Derived Column Input">
                   <inputColumns>
-                    <inputColumn refId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input].Columns[Student Nr.Albumu]" cachedCodepage="1250" cachedDataType="str" cachedLength="100" cachedName="Student Nr.Albumu" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]" />
+                    <inputColumn refId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input].Columns[Student]" cachedCodepage="1250" cachedDataType="str" cachedLength="250" cachedName="Student" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]" truncationRowDisposition="FailComponent" usageType="readWrite">
+                      <properties>
+                        <property containsID="true" dataType="System.String" description="Derived Column Expression" name="Expression">SUBSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]},1,FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]},&quot;(&quot;,1) - 2)</property>
+                        <property containsID="true" dataType="System.String" description="Derived Column Friendly Expression" expressionType="Notify" name="FriendlyExpression">SUBSTRING([Student],1,FINDSTRING([Student],&quot;(&quot;,1) - 2)</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -128,24 +122,6 @@
               <outputs>
                 <output refId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output]" description="Default Output of the Derived Column Transformation" exclusionGroup="1" name="Derived Column Output" synchronousInputId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input]">
                   <outputColumns>
-                    <outputColumn refId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Imie]" codePage="1250" dataType="str" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" length="50" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Imie]" name="Imie" truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property containsID="true" dataType="System.String" description="Derived Column Expression" name="Expression">(DT_STR,50,1250)TOKEN(TRIM(SUBSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},1,FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1) - 1))," ",1)</property>
-                        <property containsID="true" dataType="System.String" description="Derived Column Friendly Expression" expressionType="Notify" name="FriendlyExpression">(DT_STR,50,1250)TOKEN(TRIM(SUBSTRING([Student Nr.Albumu],1,FINDSTRING([Student Nr.Albumu],"(",1) - 1))," ",1)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn refId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Nazwisko]" codePage="1250" dataType="str" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" length="50" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Nazwisko]" name="Nazwisko" truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property containsID="true" dataType="System.String" description="Derived Column Expression" name="Expression">(DT_STR,50,1250)TOKEN(TRIM(SUBSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},1,FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1) - 1))," ",2)</property>
-                        <property containsID="true" dataType="System.String" description="Derived Column Friendly Expression" expressionType="Notify" name="FriendlyExpression">(DT_STR,50,1250)TOKEN(TRIM(SUBSTRING([Student Nr.Albumu],1,FINDSTRING([Student Nr.Albumu],"(",1) - 1))," ",2)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn refId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[NrAlbumu]" codePage="1250" dataType="str" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" length="10" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[NrAlbumu]" name="NrAlbumu" truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property containsID="true" dataType="System.String" description="Derived Column Expression" name="Expression">(DT_STR,10,1250)SUBSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1) + 1,FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},")",1) - FINDSTRING(#{Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student Nr.Albumu]},"(",1) - 1)</property>
-                        <property containsID="true" dataType="System.String" description="Derived Column Friendly Expression" expressionType="Notify" name="FriendlyExpression">(DT_STR,10,1250)SUBSTRING([Student Nr.Albumu],FINDSTRING([Student Nr.Albumu],"(",1) + 1,FINDSTRING([Student Nr.Albumu],")",1) - FINDSTRING([Student Nr.Albumu],"(",1) - 1)</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -158,7 +134,7 @@
                 </output>
               </outputs>
             </component>
-            <component refId="Package\Importuj Studentów\Flat File Destination" componentClassID="Microsoft.FlatFileDestination" contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0" description="Flat File Destination" localeId="1045" name="Flat File Destination" version="1">
+            <component refId="Package\Importuj Studentów\Flat File Destination" componentClassID="Microsoft.FlatFileDestination" contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" description="Flat File Destination" localeId="1045" name="Flat File Destination" version="1">
               <properties>
                 <property dataType="System.Boolean" description="Specifies whether the data will overwrite or append to the destination file." name="Overwrite">true</property>
                 <property dataType="System.Null" description="Specifies the text to write to the destination file before any data is written." expressionType="Notify" name="Header" />
@@ -170,14 +146,10 @@
               <inputs>
                 <input refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input]" hasSideEffects="true" name="Flat File Destination Input">
                   <inputColumns>
-                    <inputColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].Columns[Imie]" cachedCodepage="1250" cachedDataType="str" cachedLength="50" cachedName="Imie" externalMetadataColumnId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Imie]" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Imie]" />
-                    <inputColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].Columns[Nazwisko]" cachedCodepage="1250" cachedDataType="str" cachedLength="50" cachedName="Nazwisko" externalMetadataColumnId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Nazwisko]" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[Nazwisko]" />
-                    <inputColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].Columns[NrAlbumu]" cachedCodepage="1250" cachedDataType="str" cachedLength="10" cachedName="NrAlbumu" externalMetadataColumnId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NrAlbumu]" lineageId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output].Columns[NrAlbumu]" />
+                    <inputColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].Columns[Student]" cachedCodepage="1250" cachedDataType="str" cachedLength="250" cachedName="Student" externalMetadataColumnId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Student]" lineageId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output].Columns[Student]" />
                   </inputColumns>
                   <externalMetadataColumns isUsed="True">
-                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Imie]" codePage="1250" dataType="str" length="50" name="Imie" />
-                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Nazwisko]" codePage="1250" dataType="str" length="50" name="Nazwisko" />
-                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NrAlbumu]" codePage="1250" dataType="str" length="10" name="NrAlbumu" />
+                    <externalMetadataColumn refId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Student]" codePage="1250" dataType="str" length="250" name="Student" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -185,7 +157,7 @@
           </components>
           <paths>
             <path refId="Package\Importuj Studentów.Paths[Flat File Source Output]" endId="Package\Importuj Studentów\Conditional Split.Inputs[Conditional Split Input]" name="Flat File Source Output" startId="Package\Importuj Studentów\Flat File Source.Outputs[Flat File Source Output]" />
-            <path refId="Package\Importuj Studentów.Paths[Poprawne Wiersze]" endId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input]" name="Poprawne Wiersze" startId="Package\Importuj Studentów\Conditional Split.Outputs[Poprawne Wiersze]" />
+            <path refId="Package\Importuj Studentów.Paths[Wiersze Poprawne]" endId="Package\Importuj Studentów\Derived Column.Inputs[Derived Column Input]" name="Wiersze Poprawne" startId="Package\Importuj Studentów\Conditional Split.Outputs[Wiersze Poprawne]" />
             <path refId="Package\Importuj Studentów.Paths[Derived Column Output]" endId="Package\Importuj Studentów\Flat File Destination.Inputs[Flat File Destination Input]" name="Derived Column Output" startId="Package\Importuj Studentów\Derived Column.Outputs[Derived Column Output]" />
           </paths>
         </pipeline>
