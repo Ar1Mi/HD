@@ -1,0 +1,8 @@
+Try
+    Dim myVariable As Variables
+    Dts.VariableDispenser.LockOneForWrite( "PlikIstnieje", myVariable)
+    myVariable(“PlikIstnieje”).Value = System.IO.File.Exists( Dts.Connections( “Eksportuj Studentów”).ConnectionString)
+    Dts.TaskResult = ScriptResults.Success
+Catch
+    Dts.TaskResult = ScriptResults.Failure
+End Try
